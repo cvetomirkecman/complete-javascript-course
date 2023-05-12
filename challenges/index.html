@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body>
+    <script>
+        let markMass = 78;
+        let markHeight = 1.69;
+        let johnMass = 92;
+        let johnHeight = 1.95;
+
+        let markBMI = markMass / markHeight ** 2;
+        let johnBMI = johnMass / johnHeight ** 2;
+
+        console.log("Mark BMI is" + " " + markBMI);
+        console.log("John BMI is" + " " + johnBMI);
+
+        let markHigherBMI = markBMI > johnBMI;
+
+        console.log("Is Mark BMI higher?" + " " + markHigherBMI);
+    </script>
+</body>
+
+</html>
