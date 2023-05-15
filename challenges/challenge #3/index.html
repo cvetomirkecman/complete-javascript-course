@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body>
+  <script>
+    const averageScoreDolphins = (1 + 1 + 96) / 3
+    const averageScoreKoalas = (96 + 1 + 1) / 3
+    console.log(averageScoreDolphins)
+    console.log(averageScoreKoalas)
+    if (averageScoreDolphins > averageScoreKoalas && averageScoreDolphins >= 100) {
+      console.log('Dolphins win!')
+    } else if (averageScoreKoalas > averageScoreDolphins && averageScoreKoalas >= 100) {
+      console.log('Koalas win!')
+    } else if (averageScoreDolphins === averageScoreKoalas && averageScoreDolphins >= 100 && averageScoreKoalas >= 100) {
+      console.log(`Both teams win the trophy`)
+    } else {
+      console.log('No team wins the trophy')
+    }
+  </script>
+</body>
+
+</html>
