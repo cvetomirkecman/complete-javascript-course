@@ -299,7 +299,7 @@ if (age >= 18) {
 console.log(drink2)
 
 console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`)
-*/
+
 const country = `Serbia`
 const population = 6000000
 
@@ -307,3 +307,4 @@ console.log(
   `${country}'s population is ${population > 330000000 ? 'above' :
     'below'} average`,
 );
+*/
