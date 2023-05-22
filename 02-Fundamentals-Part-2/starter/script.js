@@ -362,9 +362,135 @@ myCountry.describe()
 myCountry.checkIsland()
 console.log(myCountry)
 
+
+// console.log('Lifting weights repetition 1')
+
+//for loop keeps running while condition is TRUE
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep}`)
+}
+
+for (let voter = 1; voter <= 50; voter++) {
+  console.log(`Voter number ${voter} is currently voting`)
+}
+
+const jonas = [
+  'Jonas',
+  'Schmedtmann',
+  2037 - 1991,
+  'teacher',
+  ['Micheal', 'Peter', 'Steven'],
+  true
+]
+const types = []
+for (let i = 0; i < jonas.length; i++) {
+  console.log(jonas[i], typeof jonas[i])
+
+  // //Filling types array
+  // types[i] = typeof jonas[i]
+  types.push(typeof jonas[i])
+}
+
+console.log(types)
+
+const years = [1991, 2007, 1969, 2020]
+const ages = []
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i])
+}
+console.log(ages)
+
+//continue and break
+console.log(`---ONLY STRINGS---`)
+for (let i = 0; i < jonas.length; i++) {
+  if (typeof jonas[i] !== 'string') continue
+  console.log(jonas[i], typeof jonas[i])
+}
+
+console.log(`---BREAK WITH NUMBER---`)
+for (let i = 0; i < jonas.length; i++) {f (typeof jonas[i] === 'number') break
+  console.log(jonas[i], typeof jonas[i])
+}
+
+
+function percentageOfWorld1(population) {
+  return `This country has ` + ((population / 7900) * 100) + `% population of whole world population`
+}
+
+const populations = [10, 1441, 332, 83222222]
+const percentages2 = []
+
+for (let i = 0; i < populations.length; i++) {
+  percentages2.push(percentageOfWorld1(populations[i]))
+}
+
+console.log(percentages2)
+
+
+const jonas = [
+  'Jonas',
+  'Schmedtmann',
+  2037 - 1991,
+  'teacher',
+  ['Micheal', 'Peter', 'Steven']
+]
+//0, 1, ..., 4
+//4, 3, ..., 0
+
+for (let i = jonas.length - 1; i >= 0; i--) {
+  console.log(i, jonas[i])
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`------- Starting exercise ${exercise}`)
+
+  for (let rep = 1; rep < 6; rep++) {
+  console.log(`Lifting weight repetition ${rep}`)
+ }
+}
+
+const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia'
+]]
+
+for (let i = 0; i < listOfNeighbours.length; i++) {
+  for (let y = 0; y < listOfNeighbours[i].length; y++)
+  console.log(`Neighbour: ${listOfNeighbours[i][y]}`)
+}
+
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition ${rep}`)
+// }
+
+// let rep = 1;
+// while (rep <= 10) {
+//   console.log(`WHILE: Lifting weights repetition ${rep}`)
+//   rep++
+// }
+
+let dice = Math.trunc(Math.random() * 6) + 1
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`)
+  dice = Math.trunc(Math.random() * 6) + 1
+  if (dice === 6) console.log('Loop is about to end...')
+}
+
+
+function percentageOfWorld1(population) {
+  return `This country has ` + ((population / 7900) * 100) + `% population of whole world population`
+}
+
+const populations = [10, 1441, 332, 83222222]
+const percentages3 = []
+
+let i = 0
+while (i < populations.length) {
+percentages3.push(percentageOfWorld1(populations[i]))
+i++
+}
+console.log(percentages3)
+
 */
-
-
 
 
 
